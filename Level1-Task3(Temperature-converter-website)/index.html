@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/RahulSingh693/ML_Photos/main/pngwing.com%20(6).png"
+    type="image/x-icon">
+    <title>Temperature Conversion</title>
+    <link rel="stylesheet" href="Style\index.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-title">Temperature Converter</div>
+      <div class="nav-content">About</div>
+    </div>
+
+    <!-- Main Section -->
+    <div class="main">
+      <div class="container">
+        <div class="temp">
+          <span>Temperature : </span>
+          <input type="number" id="tempr" placeholder="Enter Temperature in degrees" />
+
+          <select id="units">
+            <option value="#">-Select-</option>
+            <option value="Celcius">Celcius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+          </select>
+        </div>
+        <div class="temp-type">
+          <span>Convert To : </span>
+          <select id="unit">
+            <option value="#">-Select-</option>
+            <option value="Celcius">Celcius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Kelvin">Kelvin</option>
+          </select>
+        </div>
+        <div class="result">
+          <span>Result : </span>
+          <div id="results"></div>
+        </div>
+
+        <button onclick="convertTemperature()" class="submit">Convert</button>
+      </div>
+    </div>
+    <script src="Script\index.js"></script>
+  </body>
+</html>
