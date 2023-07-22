@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Creepster", cursive;
+  font-family: "GFS Didot", serif;
+}
+.navbar {
+  height: 100px;
+  border: 1px solid red;
+}
+
+.align {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
