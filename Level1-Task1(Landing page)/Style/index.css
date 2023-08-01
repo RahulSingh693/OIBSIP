@@ -7,9 +7,14 @@ body {
   font-family: "Creepster", cursive;
   font-family: "GFS Didot", serif;
 }
+
+.font-inter {
+  font-family: "Inter";
+  text-align: center;
+}
+
 .navbar {
   height: 100px;
-  /* border: 1px solid red; */
   position: fixed;
 }
 
@@ -19,10 +24,11 @@ body {
   align-items: center;
 }
 
-.icon  {
+.icon {
   width: 17.5rem;
   height: 40px;
-  background: url(https://www.expressvpn.com/frtr/assets/images/edsv2/logo/expressvpn-logo-red.svg)50%/contain no-repeat;
+  background: url(https://www.expressvpn.com/frtr/assets/images/edsv2/logo/expressvpn-logo-red.svg)
+    50% / contain no-repeat;
   align-self: center;
   margin-right: 1.5rem;
   cursor: pointer;
@@ -34,12 +40,11 @@ body {
   align-items: center;
   flex-direction: row;
   /* margin-right: 40px; */
-
 }
 .text {
   font-size: 15px;
-  font-family: Inter;
-  font-weight: 600;
+  font-family: "Inter";
+  font-weight: 500;
   /* height: 8rem; */
 }
 .option {
@@ -47,7 +52,7 @@ body {
   text-decoration: none;
   align-items: center;
   height: 100%;
-  margin-right: 1.5rem;
+  margin-right: 1.3rem;
   list-style: none;
   cursor: pointer;
 }
@@ -61,7 +66,7 @@ a:hover {
   color: #065a48;
 }
 
-button {
+.menu button {
   height: 40px;
   width: 153px;
   border: 2px solid #0e9174;
@@ -71,8 +76,15 @@ button {
   font-weight: 600;
   color: #0e7962;
   background-color: transparent;
+  cursor: pointer;
+  z-index: 1;
 }
 
+.menu button:hover {
+  background-color: #d4e300;
+  border-color: #d4e300;
+  color: #0c0c0e;
+}
 .dropdown {
   content: " ";
   background: url(https://www.expressvpn.com/frtr/assets/images/edsv2/icons/chevron-down.svg);
@@ -94,9 +106,150 @@ button {
   margin-right: 5px;
 }
 
-.hero-section img{
+.hero-section {
+  display: flex;
+  align-items: normal;
+  justify-content: center;
+  background: url(https://ftr.imgix.net/FQBOc9Uh5e22pHikmfCJR/3ce3022343c7ad918545a6a2e01f36b5/homepage-pingzhu-hero-bg-opt-v2.jpg?auto=format%2Ccompress&cs=srgb&fit=max&q=60&w=1920&s=ae7331908c13b70917d2f5b72adea99b)
+    center center;
+  background-size: cover;
+  flex-direction: column;
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 75px;
   /* border: 1px solid red; */
-  object-fit: cover;
+  /* height: 100%; */
+  position: relative;
+  top: -8%;
+}
+
+.hero-content .row-1 {
+  font-size: 5.8rem;
+  letter-spacing: 2px;
+  width: 100%;
+  font-family: "PT Serif", sans-serif;
+  padding-left: 30px;
+}
+
+.hero-content .row-2 {
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+.hero-content .row-3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content .row-3 button {
+  width: 17rem;
+  height: 4rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  margin: 20px auto;
+  border: 1px solid #0f866c;
+  background-color: #0f866c;
+  cursor: pointer;
+}
+
+.hero-content .row-3 button .arrow {
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  margin-left: .4rem;
+}
+
+.hero-content .row-3 button:hover {
+  background-color: #d4e300;
+  border: 1px solid #d4e300;
+  color: #001d2f;
+}
+.hero-content .row-3 button:hover .arrow img {
+  filter: invert(1);
+}
+
+.hero-content .row-3 .font-1 {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hero-content .row-4 {
+  letter-spacing: 1.5px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin: 10px auto;
+}
+
+.hero-section .shadow-img {
+  position: absolute;
+  bottom: 0px;
+  /* left: 50%; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-section .shadow-img img {
+  width: 500px;
+  aspect-ratio: auto 572 / 260;
+  user-select: none;
+}
+
+.ads {
+  /* width: 100%; */
+  margin: 6.25rem 5rem;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.ads .ads-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.7rem;
+  width: 42%;
+}
+
+.ads .ads-content h1 {
+  font-family: "PT Serif";
+  font-size: 2rem;
+  font-weight: lighter;
+  color: #001d2f;
+}
+
+.ads .ads-content p {
+  text-align: justify;
+  font-weight: 400;
+  color: #001d2f;
+  font-size: 1rem;
+}
+
+.ads .ads-img {
+  padding: 1.5rem;
+}
+
+.middle-column {
+  
 }
