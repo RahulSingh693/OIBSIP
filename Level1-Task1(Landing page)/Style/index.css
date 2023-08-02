@@ -341,7 +341,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  /* width: 100%; */
   font-size: 2.5rem;
   font-family: "PT Serif";
   font-weight: 400;
@@ -352,10 +352,147 @@ a:hover {
 .middle-column .map .flags {
   display: flex;
   align-items: center;
-  justify-content: center;
-  overflow-y: scroll;
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  height: 7rem;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
-.map .flags .flag-img {
-  background: url();
+.middle-column .map .flags::-webkit-scrollbar {
+  display: none;
+}
+
+.map .flags .flag-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 0 0 auto;
+  gap: .7rem;
+  animation: scrollCards 10s linear infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-160%);
+  }
+  40%{
+    transform: translateX(-320%);
+  }
+  60%{
+    transform: translateX(-480%);
+  }
+  80%{
+    transform: translateX(-640%);
+  }
+  100%{
+    transform: translateX(-800%);
+  }
+
+}
+
+.map .flags .flag-img .flag1 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/bangladesh.png);
+  background-size: 130%;
+}
+.map .flags .flag-img .flag2 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/belgium.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag3 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/australia.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag4 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/canada.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag5 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/china.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag6 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/denmark.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag7 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/egypt.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag8 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/germany.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag9 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/india.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag10 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/netherlands.png);
+  background-size: 125%;
+}
+.map .flags .flag-img .flag11 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/mexico.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag12 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/russia.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag13 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/singapore.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag14 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/south-africa.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag15 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/south-korea.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag16 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/sweden.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag17 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/taiwan.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag18 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/turkey.png);
+  background-size: 110%;
+}
+.map .flags .flag-img .flag19 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/united-arab-emirates.png);
+  background-size: 125%;
+}
+.map .flags .flag-img .flag20 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/united-kingdom.png);
+  background-size: 110%;
+}
+
+.map .flags .flag-img .flag-container {
+  border: 1px solid blue;
+  height: 4rem;
+  width: 5.2rem;
+  border-radius: .5rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.map .flags .flag-img .country-name {
+  font-size: 0.9rem;
+  color: transparent
+}
+
+.map .flags .flag-img:hover .country-name {
+  color: #001d2f;
 }
