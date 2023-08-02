@@ -372,7 +372,7 @@ a:hover {
   flex-direction: column;
   flex: 0 0 auto;
   gap: .7rem;
-  animation: scrollCards 10s linear infinite;
+  animation: scrollCards 15s linear infinite;
   animation-timing-function: linear;
 }
 
@@ -395,7 +395,6 @@ a:hover {
   100%{
     transform: translateX(-800%);
   }
-
 }
 
 .map .flags .flag-img .flag1 {
@@ -404,83 +403,83 @@ a:hover {
 }
 .map .flags .flag-img .flag2 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/belgium.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag3 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/australia.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag4 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/canada.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag5 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/china.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag6 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/denmark.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag7 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/egypt.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag8 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/germany.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag9 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/india.png);
-  background-size: 110%;
+  background-size: 125%;
 }
 .map .flags .flag-img .flag10 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/netherlands.png);
-  background-size: 125%;
+  background-size: 130%;
 }
 .map .flags .flag-img .flag11 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/mexico.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag12 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/russia.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag13 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/singapore.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag14 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/south-africa.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag15 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/south-korea.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag16 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/sweden.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag17 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/taiwan.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag18 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/turkey.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 .map .flags .flag-img .flag19 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/united-arab-emirates.png);
-  background-size: 125%;
+  background-size: 130%;
 }
 .map .flags .flag-img .flag20 {
   background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/united-kingdom.png);
-  background-size: 110%;
+  background-size: 120%;
 }
 
 .map .flags .flag-img .flag-container {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 4rem;
   width: 5.2rem;
   border-radius: .5rem;
