@@ -14,8 +14,16 @@ body {
 }
 
 .navbar {
-  height: 100px;
+  height: 5rem;
+  width: 100vw;
   position: fixed;
+  /* background-color: #001d2f; */
+  z-index: 100;
+  transition: .3s;
+}
+
+.navbar.scroll {
+  background-color: #fff;
 }
 
 .align {
@@ -26,7 +34,7 @@ body {
 
 .icon {
   width: 17.5rem;
-  height: 40px;
+  height: 2.2rem;
   background: url(https://www.expressvpn.com/frtr/assets/images/edsv2/logo/expressvpn-logo-red.svg)
     50% / contain no-repeat;
   align-self: center;
@@ -251,5 +259,103 @@ a:hover {
 }
 
 .middle-column {
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f9f8f2;
+}
+
+.middle-column .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "PT Serif";
+  font-size: 3rem;
+  font-weight: 300;
+  margin-top: 5rem;
+}
+
+.middle-column .middle-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid blue; */
+  width: 89%;
+  margin: 2rem auto;
+  gap: 2rem 0;
+}
+
+.middle-column .middle-content .card{
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.middle-column .middle-content .card img {
+  width: 340px;
+  aspect-ratio: auto 440 / 224;
+  overflow: clip;
+  margin: 1rem auto;
+}
+
+.middle-column .middle-content .card .headings {
+  font-size: 1.5rem;
+  font-family: "Inter";
+  font-weight: 600;
+  text-align: center;
+  margin: 1rem auto;
+  width: 100%;
+  color: #001d2f;
+  -webkit-transform: scale(1.03,1);
+}
+
+.middle-column .middle-content .card .para {
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: #001d2f;
+  width: 90%;
+}
+
+.middle-column .map {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://xvdrop.imgix.net/map-55268416cd7ee847a41939f31605e2fa9977e841.png?w=2880&q=55&auto=format);
+  background-position: 50% center;
+  background-repeat: no-repeat;
+  margin: 5rem 0rem 3rem 0rem;
+  height: 500px;
+  width: 100%;
+  background-size: contain;
+  border: 1px solid blue;
+  flex-direction: column;
+}
+
+.middle-column .map .map-row-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 2.5rem;
+  font-family: "PT Serif";
+  font-weight: 400;
+  padding: 1.5rem;
+  transform: scale(1.2,1.3);
+}
+
+.middle-column .map .flags {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
+}
+
+.map .flags .flag-img {
+  background: url();
 }
