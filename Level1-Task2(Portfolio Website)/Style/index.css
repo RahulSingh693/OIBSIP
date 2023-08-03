@@ -1,254 +1,410 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 :root {
-    --text-color: #020731;
-    --texth: #dd4f4fe8;
+  --text-color: #020731;
+  --texth: #dd4f4fe8;
+  --fade-txt: rgba(51, 53, 53, 0.671);
 }
 
 .navbar {
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    /* border: 1px solid yellow; */
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  /* border: 1px solid yellow; */
 }
 
 .navbar .logos {
-    font-size: 1.5rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all .3s ease;
-    margin: 0 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 2rem;
 }
 .navbar .menu {
-    display: flex;
-    align-content: stretch;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    list-style: none;
-    margin: 0 2rem;
+  display: flex;
+  align-content: stretch;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  margin: 0 2rem;
 }
 
 .navbar .menu .menu-item {
-    color: var(--text-color);
-    font-weight: 500;
-    font-size: 1.1rem;
-    cursor: pointer;
-    padding-right: 1rem;
-    transition: all .30s ease;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding-right: 1rem;
+  transition: all 0.3s ease;
 }
 
 .navbar .menu .menu-item:hover {
-    color: var(--texth);
+  color: var(--texth);
 }
 
 .Hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 5rem);
-    width: 100%;
-    /* background-color: rgba(250, 235, 215, 0.199); */
-    gap: 2rem;
-    /* border: 1px solid pink; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 5rem);
+  width: 100%;
+  /* background-color: rgba(250, 235, 215, 0.199); */
+  gap: 2rem;
+  /* border: 1px solid pink; */
 }
 
 .Hero .hero-image {
-    height: 12rem;
-    width: 12rem;
-    border-radius: 50%;
-    border: 1px solid blue;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  border: 1px solid blue;
 }
 
 .Hero .hero-content {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-    flex-direction: column;
-    width: 40%;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
 }
 
 .Hero .hero-content .heading {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--text-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 .Hero .hero-content .bio {
-    margin: 1.5rem auto;
-    font-size: 1rem;
-    font-weight: 600;
-    color: rgba(51, 53, 53, 0.671);
+  margin: 1.5rem auto;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(51, 53, 53, 0.671);
 }
 
 .Hero .hero-content .bttn {
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-    gap: 1.5rem;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  gap: 1.5rem;
+  width: 100%;
 }
 
 .Hero .hero-content .bttn .git {
-    background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/github-logo.png);
-    background-size: cover;
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/github-logo.png);
+  background-size: cover;
 }
 .Hero .hero-content .bttn .lin {
-    background: url("https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/pngwing.com%20(7).png");
-    background-size: 125%;
+  background: url("https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/pngwing.com%20(7).png");
+  background-size: 125%;
 }
 .Hero .hero-content .bttn .icon {
-    text-decoration: none;
-    height: 2.5rem;
-    width: 2.5rem;
-    border-radius: 50%;
-    /* border: 1px solid green; */
-    background-position: center center;
-    background-repeat: no-repeat;
+  text-decoration: none;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  /* border: 1px solid green; */
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .Hero .hero-content .bttn button {
-    height: 2.5rem;
-    width: 7rem;
-    border-radius: 5px;
-    font-size: .9rem;
-    font-weight: 600;
-    background-color: #fa6060c9;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    margin: 0 1rem;
-    transition: all .3s ease;
+  height: 2.5rem;
+  width: 7rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  background-color: #fa6060c9;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 0 1rem;
+  transition: all 0.3s ease;
 }
 .Hero .hero-content .bttn button:hover {
-    background-color: #dd4f4fe8;
+  background-color: #dd4f4fe8;
 }
 
 .education {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgba(252, 232, 223, 0.445);
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(252, 232, 223, 0.445);
+  gap: 2rem;
 }
 
 .education .head {
-    font-size: 2rem;
-    font-weight: 600;
-    /* display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  /* display: flex;
     flex-wrap: wrap; */
-    margin-top: 4rem;
-    animation: shake 2s linear infinite;
+  margin-top: 4rem;
+  animation: shake 2s linear infinite;
 }
 .education .head span {
-    font-size: 2.5rem;
-    font-weight: 600;
-    
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 @keyframes shake {
-    0%{
-        transform: translateY(0%);
-    }
-    25%{
-        transform: translateY(10%);
-    }
-    50%{
-        transform: translateY(0%);
-    }
-    75%{
-        transform: translateY(-10%);
-    }
-    100%{
-        transform: translateY(0%);
-    }
+  0% {
+    transform: translateY(0%);
+  }
+  25% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  75% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .education .edu-content {
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1rem auto 4rem auto;
-    
-    gap: 2rem;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem auto 4rem auto;
+
+  gap: 2rem;
 }
 
 .education .edu-content .diploma {
-    width: 100%;
-    /* border: 1px solid red; */
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    transition: all .4s ease;
+  width: 100%;
+  /* border: 1px solid red; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  transition: all 0.4s ease;
 }
 
 .education .edu-content .diploma .clogo {
-    height: 6rem;
-    width: 6rem;
-    /* border: 1px solid yellow; */
-    background: url(http://administration.sliet.ac.in/files/2014/08/Red.jpg);
-    background-size: contain;
-    background-position: center center;
-    border-radius: 50%;
-    margin: 0 2rem;
+  height: 6rem;
+  width: 6rem;
+  /* border: 1px solid yellow; */
+  background: url(http://administration.sliet.ac.in/files/2014/08/Red.jpg);
+  background-size: contain;
+  background-position: center center;
+  border-radius: 50%;
+  margin: 0 2rem;
 }
 
 .education .edu-content .diploma .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1.5rem 0;
+  width: 50%;
+}
+
+.education .edu-content .diploma .content h2 {
+  margin: 0.5rem 0;
+}
+
+.education .edu-content .diploma .content p {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: rgba(51, 53, 53, 0.671);
+  margin: 0.5rem 0;
+}
+
+.education .edu-content .diploma .content span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #001d2f;
+  margin-bottom: 1rem;
+}
+.education .edu-content .diploma .content .skill {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.education .edu-content .diploma .content .skill span {
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.education .edu-content .diploma .time {
+  font-family: "Lato";
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2.5rem 1rem;
+}
+
+.tech {
+  /* background-color: rgb(249, 251, 253); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  /* height: 500px; */
+  margin: 0 0 4rem 0;
+}
+
+.tech .header {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  animation: shake 2s linear infinite;
+}
+.tech .header span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.tech .row-1 {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.tech .row-1 .t1 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/5a36954d40bea2.0735336615135266052652.png);
+  background-size: 110%;
+  background-position: center center;
+}
+.tech .row-1 .t2 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/python.png);
+  background-size: contain;
+  background-position: center center;
+}
+.tech .row-1 .t3 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/html-5.png);
+  background-size: contain;
+  background-position: center center;
+}
+.tech .row-1 .t4 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/css-3.png);
+  background-size: contain;
+  background-position: center center;
+}
+.tech .row-1 .t5 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/js.png);
+  background-size: contain;
+  background-position: center center;
+}
+.tech .row-1 .t6 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/java.png);
+  background-size: contain;
+  background-position: center center;
+}
+.tech .row-1 .t7 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/c-.png);
+  background-size: contain;
+  background-position: center center;
+}
+.tech .row-1 .t8 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/assembly.png);
+  background-size: 140%;
+  background-position: center center;
+}
+.tech .row-1 .t9 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/linux.png);
+  background-size: contain;
+  background-position: center center;
+}
+.tech .row-1 .t10 {
+  background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/machine-learning.png);
+  background-size: contain;
+  background-position: center center;
+}
+
+.tech .row-1 .box {
+  height: 5rem;
+  width: 5rem;
+  cursor: pointer;
+}
+
+.projects {
+  background-color: rgba(192, 243, 243, 0.24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+  height: 500px;
+}
+
+.projects .heads {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  animation: shake 2s linear infinite;
+}
+.projects .heads span {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.projects .project1 {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid blueviolet;
+}
+
+.projects .project1 .pcontent {
+    width: 40%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    margin: 1.5rem 0;
-    width: 50%;
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
-.education .edu-content .diploma .content h2 {
-    margin: .5rem 0;
-}
-
-.education .edu-content .diploma .content p {
-    font-size: .9rem;
+.projects .project1 .pcontent .subhead {
+    font-family: "Raleway";
+    font-size: 1.5rem;
     font-weight: 600;
-    color: rgba(51, 53, 53, 0.671);
-    margin: .5rem 0;
 }
 
-.education .edu-content .diploma .content span {
-    font-family: Arial, Helvetica, sans-serif;
+.projects .project1 .pcontent .descr {
     font-size: 1rem;
     font-weight: 500;
-    color: #001d2f;
-    margin-bottom: 1rem;
-}
-.education .edu-content .diploma .content .skill {
-    font-family: 'Lato', sans-serif;
-    font-weight: 600;
-    font-size: 1rem;  
+    color: var(--fade-txt);
+    text-align: justify;
 }
 
-.education .edu-content .diploma .content .skill span {
-    font-size: 0.95rem;
-    font-family: inherit;
+.projects .project1 .pcontent .visit {
+    height: 3rem;
+    width: 8rem;
+    font-family: "Raleway";
+    font-size: 1.2rem;
+    background-color: #cc6ea5;
+    border: none;
+    outline: none;
+    border-radius: 50px;
 }
 
-.education .edu-content .diploma .time {
-    font-family: 'Lato';
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 2.5rem 1rem;
+.projects .project1 .image {
+    height: 90%;
+    width: 20%;
+    border-radius: 10px;
 }
