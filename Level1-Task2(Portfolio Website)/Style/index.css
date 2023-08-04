@@ -17,6 +17,9 @@
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
   /* border: 1px solid yellow; */
 }
 
@@ -54,7 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: calc(100vh - 5rem);
+  min-height: 100vh;
   width: 100%;
   /* background-color: rgba(250, 235, 215, 0.199); */
   gap: 2rem;
@@ -347,7 +350,7 @@
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-  height: 500px;
+  /* height: 500px; */
 }
 
 .projects .heads {
@@ -367,7 +370,7 @@
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px 80px 5px 80px;
-    background-color: #f1f0f0;
+    background-color: #fff8f8e1;
 }
 
 .projects .project1 .pcontent {
@@ -384,6 +387,7 @@
     font-family: "Raleway";
     font-size: 1.5rem;
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .projects .project1 .pcontent .descr {
@@ -415,11 +419,15 @@
 }
 
 .projects .project1 .image {
-    height: 75%;
-    width: 45%;
+    height: 15rem;
+    width: 28rem;
     border-radius: 10px;
     background: url(https://raw.githubusercontent.com/RahulSingh693/OIBSIP/main/Web%20Images/diseaseai.jpg);
     background-position: center -7%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.projects .mrgn {
+    margin-bottom: 4rem;
 }
